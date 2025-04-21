@@ -13,50 +13,6 @@
       "instructor": "Dr. Pan Theo Grosse-Ruyken",
       "progress": 75,
       "userId": "1"
-    },
-    {
-      "id": "2",
-      "title": "Healthcare and Pharma",
-      "description": "Master advanced JavaScript concepts and design patterns for professional development.",
-      "duration": "8 weeks",
-      "level": "advanced",
-      "category": "Programming",
-      "rating": 4.9,
-      "enrolled": 850,
-      "imageUrl": "/images/health.jpeg",
-      "createdAt": "2023-02-20T14:15:00Z",
-      "instructor": "John Doe",
-      "progress": 30,
-      "userId": "1"
-    },
-    {
-      "id": "3",
-      "title": "Insurance",
-      "description": "Learn the principles of user interface and experience design.",
-      "duration": "5 weeks",
-      "level": "beginner",
-      "category": "Design",
-      "rating": 4.5,
-      "enrolled": 2100,
-      "imageUrl": "/images/insurance.jpeg",
-      "createdAt": "2023-03-10T09:00:00Z",
-      "instructor": "Alex Johnson",
-      "userId": "2"
-    },
-    {
-      "id": "4",
-      "title": "Real Estate",
-      "description": "Introduction to data analysis and visualization using Python.",
-      "duration": "10 weeks",
-      "level": "intermediate",
-      "category": "Data Science",
-      "rating": 4.8,
-      "enrolled": 1800,
-      "imageUrl": "/images/RealEstate.jpeg",
-      "createdAt": "2023-01-30T11:45:00Z",
-      "instructor": "Maria Garcia",
-      "progress": 100,
-      "userId": "1"
     }
   ],
   "users": [
