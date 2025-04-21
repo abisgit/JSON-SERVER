@@ -1,102 +1,231 @@
 {
+  "courses": [
+    {
+      "id": "1",
+      "title": "Self-Study Program",
+      "description": "Gain in-depth knowledge of cryptocurrency, blockchain, and digital asset management. Become a certified expert in the evolving world of crypto.",
+      "duration": "6 weeks",
+      "category": "Web Development",
+      "rating": 4.7,
+      "enrolled": 1,
+      "imageUrl": "/images/finance.jpeg",
+      "createdAt": "2023-01-15T10:30:00Z",
+      "instructor": "Dr. Pan Theo Grosse-Ruyken",
+      "progress": 75,
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "title": "Healthcare and Pharma",
+      "description": "Master advanced JavaScript concepts and design patterns for professional development.",
+      "duration": "8 weeks",
+      "level": "advanced",
+      "category": "Programming",
+      "rating": 4.9,
+      "enrolled": 850,
+      "imageUrl": "/images/health.jpeg",
+      "createdAt": "2023-02-20T14:15:00Z",
+      "instructor": "John Doe",
+      "progress": 30,
+      "userId": "1"
+    },
+    {
+      "id": "3",
+      "title": "Insurance",
+      "description": "Learn the principles of user interface and experience design.",
+      "duration": "5 weeks",
+      "level": "beginner",
+      "category": "Design",
+      "rating": 4.5,
+      "enrolled": 2100,
+      "imageUrl": "/images/insurance.jpeg",
+      "createdAt": "2023-03-10T09:00:00Z",
+      "instructor": "Alex Johnson",
+      "userId": "2"
+    },
+    {
+      "id": "4",
+      "title": "Real Estate",
+      "description": "Introduction to data analysis and visualization using Python.",
+      "duration": "10 weeks",
+      "level": "intermediate",
+      "category": "Data Science",
+      "rating": 4.8,
+      "enrolled": 1800,
+      "imageUrl": "/images/RealEstate.jpeg",
+      "createdAt": "2023-01-30T11:45:00Z",
+      "instructor": "Maria Garcia",
+      "progress": 100,
+      "userId": "1"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "email": "cust1@example.com",
+      "password": "password123",
+      "firstName": "cust1",
+      "lastName": "Doe",
+      "phoneNumber": "+1234567890",
+      "referralCode": "JOHNDOE123",
+      "tokenBalance": "1000",
+      "totalCommissionEarned": "500",
+      "address": "123 Main St, New York",
+      "dob": "1990-01-01",
+      "nationality": "US",
+      "street": "123 Main St",
+      "city": "New York",
+      "state": "NY",
+      "zipCode": "10001",
+      "country": "United States",
+      "cryptoWallet": "0x123456789ABCDEF",
+      "kycVerified": false,
+      "emailVerified": false
+    },
+    {
+      "id": "2",
+      "email": "cust2@example.com",
+      "password": "password123",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "phoneNumber": "+1987654321",
+      "referralCode": "JANESMITH456",
+      "tokenBalance": "2500",
+      "totalCommissionEarned": "1200",
+      "address": "456 Oak Ave, Los Angeles",
+      "dob": "1985-05-15",
+      "nationality": "UK",
+      "street": "123 Main St",
+      "city": "New York",
+      "state": "NY",
+      "zipCode": "10001",
+      "country": "United States",
+      "cryptoWallet": "0x123456789ABCDEF",
+      "kycVerified": false,
+      "emailVerified": true
+    },
+    {
+      "id": "3",
+      "email": "cst3@example.com",
+      "password": "password123",
+      "firstName": "Cust3",
+      "lastName": "Smith",
+      "phoneNumber": "+1987654321",
+      "referralCode": "JANESMITH456",
+      "tokenBalance": "2500",
+      "totalCommissionEarned": "1200",
+      "address": "456 Oak Ave, Los Angeles",
+      "dob": "1985-05-15",
+      "nationality": "UK",
+      "street": "123 Main St",
+      "city": "New York",
+      "state": "NY",
+      "zipCode": "10001",
+      "country": "United States",
+      "cryptoWallet": "0x123456789ABCDEF",
+      "kycVerified": false,
+      "emailVerified": true
+    },
+    {
+      "id": "4",
+      "email": "cust4@example.com",
+      "password": "password123",
+      "firstName": "Cust4",
+      "lastName": "Smith",
+      "phoneNumber": "+1987654321",
+      "referralCode": "CUST4MITH456",
+      "tokenBalance": "2500",
+      "totalCommissionEarned": "1200",
+      "address": "456 Oak Ave, Los Angeles",
+      "dob": "1985-05-15",
+      "nationality": "UK",
+      "street": "123 Main St",
+      "city": "New York",
+      "state": "NY",
+      "zipCode": "10001",
+      "country": "United States",
+      "cryptoWallet": "0x123456789ABCDEF",
+      "kycVerified": false,
+      "emailVerified": true
+    },
+    {
+      "id": "movqtfvuf4q4kimjxlany",
+      "email": "cust5@gmail.com",
+      "password": "password123",
+      "firstName": "cust5",
+      "lastName": "Cust5",
+      "phoneNumber": "0911892664",
+      "referralCode": "CUST4MITH456",
+      "tokenBalance": "0",
+      "totalCommissionEarned": "0",
+      "address": "Addis Ababa",
+      "dob": "",
+      "nationality": "",
+      "kycVerified": false
+    }
+  ],
   "transactions": [
     {
-      "id": 1,
-      "date": "2019-12-01",
-      "description": "Paycheck from Bob's Burgers",
-      "category": "Income",
-      "amount": 1000
+      "id": "1",
+      "transactionId": "txn_123456789",
+      "amount": "100.00",
+      "type": "deposit",
+      "status": "completed",
+      "createdAt": "2023-05-15T10:30:00Z",
+      "userId": "1",
+      "token": "50"
     },
     {
-      "id": 2,
-      "date": "2019-12-01",
-      "description": "South by Southwest Quinoa Bowl at Fresh & Co",
-      "category": "Food",
-      "amount": -10.55
+      "id": "2",
+      "transactionId": "txn_987654321",
+      "amount": "50.50",
+      "type": "withdrawal",
+      "status": "pending",
+      "createdAt": "2023-05-16T14:45:00Z",
+      "userId": "1",
+      "token": "25.25"
     },
     {
-      "id": 3,
-      "date": "2019-12-02",
-      "description": "South by Southwest Quinoa Bowl at Fresh & Co",
-      "category": "Food",
-      "amount": -10.55
+      "id": "3",
+      "transactionId": "txn_456789123",
+      "amount": "75.00",
+      "type": "transfer",
+      "status": "failed",
+      "createdAt": "2023-05-17T09:15:00Z",
+      "userId": "1",
+      "token": "32.5"
     },
     {
-      "id": 4,
-      "date": "2019-12-04",
-      "description": "Sunglasses, Urban Outfitters",
-      "category": "Fashion",
-      "amount": -24.99
+      "id": "4",
+      "transactionId": "txn_321654987",
+      "amount": "200.00",
+      "type": "deposit",
+      "status": "completed",
+      "createdAt": "2023-05-18T16:20:00Z",
+      "userId": "2",
+      "token": "100"
+    }
+  ],
+  "commissions": [
+    {
+      "id": "1",
+      "userId": "1",
+      "amount": "50.00",
+      "level": 1,
+      "transactionId": "txn123",
+      "status": "completed",
+      "type": "referral",
+      "createdAt": "2023-05-15T10:30:00Z"
     },
     {
-      "id": 5,
-      "date": "2019-12-06",
-      "description": "Venmo, Alice Pays you for Burrito",
-      "category": "Food",
-      "amount": 8.75
-    },
-    {
-      "id": 6,
-      "date": "2019-12-06",
-      "description": "Chipotle",
-      "category": "Food",
-      "amount": -17.59
-    },
-    {
-      "id": 7,
-      "date": "2019-12-07",
-      "description": "Birthday Check from Grandma",
-      "category": "Gift",
-      "amount": 50
-    },
-    {
-      "id": 8,
-      "date": "2019-12-09",
-      "description": "Lyft Ride",
-      "category": "Transportation",
-      "amount": -13.25
-    },
-    {
-      "id": 9,
-      "date": "2019-12-11",
-      "description": "Paycheck from Bob's Burgers",
-      "category": "Income",
-      "amount": 1000
-    },
-    {
-      "id": 10,
-      "date": "2019-12-16",
-      "description": "Tickets, Flatiron Multiplex Cinemas",
-      "category": "Entertainment",
-      "amount": -24
-    },
-    {
-      "id": 11,
-      "date": "2019-12-16",
-      "description": "MTA Vending Machine: MetroCard",
-      "category": "Transportation",
-      "amount": -116.39
-    },
-    {
-      "id": 12,
-      "date": "2019-12-17",
-      "description": "Venmo, Pay Roommate for Rent",
-      "category": "Housing",
-      "amount": -975
-    },
-    {
-      "date": "2022-07-09",
-      "description": "Office lunch",
-      "category": "Food",
-      "amount": "2000",
-      "id": 13
-    },
-    {
-      "date": "2022-07-09",
-      "description": "Office lunch Wednesday",
-      "category": "Food",
-      "amount": "3000",
-      "id": 14
+      "id": "2",
+      "userId": "1",
+      "amount": "25.00",
+      "level": 2,
+      "transactionId": "txn456",
+      "status": "pending",
+      "type": "referral",
+      "createdAt": "2023-05-16T11:45:00Z"
     }
   ]
 }
