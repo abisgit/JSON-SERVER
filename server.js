@@ -8,6 +8,22 @@ const jwt = require('jsonwebtoken');
 // Add this to your db.json under a "users" collection
 // "users": []
 
+
+// Add CORS headers
+server.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', '*');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE, OPTIONS');
+  next();
+});
+
+// Handle preflight requests
+server.options('*', (req, res) => {
+  res.sendStatus(200);
+});
+
+
+
 // Set up middleware
 server.use(middlewares);
 server.use(jsonServer.bodyParser);
@@ -19,6 +35,9 @@ const JWT_SECRET = 'your-secret-key-here';
 const findUserByEmail = (email, db) => {
   return db.get('users').find({ email }).value();
 };
+
+server.use(middlewares);
+server.use(jsonServer.bodyParser);
 
 // Registration endpoint
 server.post('/register', (req, res) => {
